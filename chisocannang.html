@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let chieuCao = parseFloat(prompt("Moi nhap vao chieu cao(m): "));
+		let canNang = parseFloat(prompt("Moi nhap vao can nang(kg): "));
+		let chiso = "Chi so cua ban: ";
+		let bmi = canNang/(chieuCao*chieuCao);
+		if(bmi<18.5){
+			alert(chiso+"Underweight");
+		}else if(bmi>=18.5&&bmi<25.0){
+			alert(chiso+"Normal");
+		}else if(bmi>=25.0&&bmi<30){
+			alert(chiso+"Overweight");
+		}else{
+			alert(chiso+"Obese");
+		}
+	</script>
+</body>
+</html>
